@@ -17,6 +17,9 @@ LICENSE     text
 ## Configuration Files
 ######################
 *.toml      text eol=lf
+*.yaml      text eol=lf
+*.yml       text eol=lf
+CNAME       text eol=lf
 
 ## Image Files
 ##############
