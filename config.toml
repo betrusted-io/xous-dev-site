@@ -1,0 +1,140 @@
+# Hey, thanks for using my theme. If you like this theme,checkout my repo (https://gitlab.com/avron/gruvhugo"
+# and drop a star while you're at it. ;)
+baseurl = "https://xous.dev/"
+title = "Xous Operating System"
+languageCode = "en-us"
+paginate = "10" # Number of posts per page
+#disqusShortname = "" # Enable comments by entering your Disqus shortname
+#googleAnalytics = "" # Enable Google Analytics by entering your tracking id
+#-------------------------------------------------------------------------------
+# DEFAULT SETTINGS
+#-------------------------------------------------------------------------------
+
+# Default Theme
+theme= "gruvhugo"
+
+# Default Post Extension
+defaultExtension= "html"
+
+# Default metadata format for newly created frontmatter using
+# hugo new command. "toml", "yaml", or "json"
+metaDataFormat= "yaml"
+
+[taxonomies]
+  tag      = "tags"
+  category = "categories"
+  series   = "series"
+
+[params.main]
+  enabled = true
+  enableKatex = true
+  metaKeywords = "xous, betrusted, precursor, rust, os"
+  headerTitle = "Xous Operating System"
+  copyright = "© 2022 Xous Team.  <a href=\"https://creativecommons.org/licenses/by/4.0/\">Some rights reserved</a>."
+  name = "xous_os"
+  img = "img/author.jpg"
+  img_title = "Xous Operating System"
+  icon = "img/logo.png"
+  quote = "A microkernel operating system for embedded devices."
+  description= "Xous is a microkernel operating system designed for medium embedded systems with clear separation of processes. Nearly everything is implemented in userspace, where message passing forms the basic communications primitive."
+  licenseUrl = ""
+
+ # Social icons
+  [[params.social]]
+    name = "github"
+    url  = "https://github.com/betrusted-io/xous-core"
+
+  [[params.social]]
+    name = "matrix"
+    url  = "https://matrix.to/#/#precursor.dev:matrix.org"
+
+  [[params.social]]
+    name = "gitbook"
+    url  = "https://betrusted.io/xous-book/"
+
+  [[params.social]]
+    name = "dev"
+    url  = "https://betrusted.io/"
+
+[params.style]
+  # add path to custom CSS files here
+  custom_css = []
+  # add path to custom SCSS files here
+  custom_scss = []
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name       = "About"
+    url        = "about"
+
+  [[menu.main]]
+    identifier = "posts"
+    name       = "Posts"
+    url        = "post/"
+
+  [[menu.main]]
+    identifier = "wiki"
+    name       = "Wiki"
+    url        = "none"
+
+[markup]
+  defaultMarkdownHandler = "goldmark"
+  [markup.asciidocExt]
+    backend = "html5"
+    docType = "article"
+    extensions = []
+    failureLevel = "fatal"
+    noHeaderOrFooter = true
+    safeMode = "unsafe"
+    sectionNumbers = false
+    trace = false
+    verbose = true
+    workingFolderCurrent = false
+    [markup.asciidocExt.attributes]
+  [markup.blackFriday]
+    angledQuotes = false
+    footnoteAnchorPrefix = ""
+    footnoteReturnLinkContents = ""
+    fractions = true
+    hrefTargetBlank = false
+    latexDashes = true
+    nofollowLinks = false
+    noreferrerLinks = false
+    plainIDAnchors = true
+    skipHTML = false
+    smartDashes = true
+    smartypants = true
+    smartypantsQuotesNBSP = false
+    taskLists = true
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      definitionList = true
+      footnote = true
+      linkify = true
+      strikethrough = true
+      table = true
+      taskList = true
+      typographer = true
+    [markup.goldmark.parser]
+      attribute = true
+      autoHeadingID = true
+      autoHeadingIDType = "github"
+    [markup.goldmark.renderer]
+      hardWraps = false
+      unsafe = false
+      xhtml = false
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    style = "monokai"
+    tabWidth = 4
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = false
+    startLevel = 2

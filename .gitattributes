@@ -1,0 +1,24 @@
+## Repository Configuration
+###########################
+.editorconfig    text eol=lf
+.gitattributes   text eol=lf
+.gitconfig       text eol=lf
+.gitignore       text eol=lf
+.gitlab-ci.yml   text eol=lf
+.gitmodules      text eol=lf
+.travis.yml      text eol=lf
+
+## Documentation Files
+######################
+*.md        text
+*.txt       text
+LICENSE     text
+
+## Configuration Files
+######################
+*.toml      text eol=lf
+
+## Image Files
+##############
+*.jpg       binary
+*.gif       binary
