@@ -69,14 +69,19 @@ metaDataFormat= "yaml"
     url        = "about"
 
   [[menu.main]]
-    identifier = "posts"
-    name       = "Posts"
-    url        = "post/"
+    identifier = "kernel"
+    name       = "Kernel"
+    url        = "kernel"
 
   [[menu.main]]
-    identifier = "wiki"
-    name       = "Wiki"
-    url        = "none"
+    identifier = "precursor"
+    name       = "Precursor"
+    url        = "precursor"
+
+  [[menu.main]]
+    identifier = "requirements"
+    name       = "Requirements"
+    url        = "requirements"
 
 [markup]
   defaultMarkdownHandler = "goldmark"
