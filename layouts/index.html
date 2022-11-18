@@ -1,0 +1,28 @@
+{{define "main"}}
+<div class="intro" style="align-items: center">
+  {{if .Site.Params.main.enabled }}
+  <img class="image" src='{{ .Site.Params.main.img | absURL }}' title="{{	.Site.Params.main.img_title }}" width="200px"
+    alt="Author's picture or avatar or logo" />
+  <ul>
+    <li class="intro-quote">{{ .Site.Params.main.quote }}</li>
+  </ul>
+  {{end}}
+  <p>{{ .Site.Params.main.description | safeHTML }}</p>
+  <p>You can read more about it in the <a href="https://betrusted.io/xous-book/">Xous Book</a>.</p>
+  <p>
+    This project is funded through the NGI0 PET Fund, a fund established by NLnet
+    with financial support from the European Commission's Next Generation Internet
+    programme, under the aegis of DG Communications Networks, Content and Technology
+    under grant agreement No 825310.
+
+  <table>
+    <tr>
+      <td align="center" width="50%"><img src="https://nlnet.nl/logo/banner.svg" alt="NLnet foundation logo"
+          style="width:90%"></td>
+      <td align="center"><img src="https://nlnet.nl/image/logos/NGI0_tag.svg" alt="NGI0 logo" style="width:90%"></td>
+    </tr>
+  </table>
+  </p>
+</div>
+{{ partial "menu.html" . }}
+{{end}}
